@@ -1,11 +1,11 @@
-import './TodoCounter.css';
+import "./TodoCounter.css"
 
 function TodoCounter({ total, completed }) {
   return (
     <h1 className="TodoCounter">
-      Has completado <span>{completed}</span> de <span>{total}</span> TODOs
+      You have completed <span>{completed}</span> of <span>{total}</span> TODOs
     </h1>
-  );
+  )
 }
 
-export { TodoCounter };
+export { TodoCounter }
