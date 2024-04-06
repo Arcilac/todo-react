@@ -38,7 +38,7 @@ textarea::placeholder {
 }
 
 textarea:focus {
-  outline-color: #61DAFA;
+  outline-color: #2db7dd;
 }
 
 .TodoForm-buttonContainer {
