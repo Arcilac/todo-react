@@ -31,8 +31,9 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "htts://platzi.github.io/curso-react-intro",
+  "homepage": "/home/arcila/react/build/",
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "homepage": "."
   }
 }
