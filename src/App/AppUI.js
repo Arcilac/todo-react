@@ -11,7 +11,7 @@ import {TodoForm} from '../TodoForm'
 import { Modal } from "../Modal"
 import { TodoContext } from "../TodoContext"
 
-function AppUI(){
+function App(){
   const {
     loading,
     error,
@@ -63,4 +63,4 @@ return (
   )
 }
 
-export { AppUI }
+export { App }
