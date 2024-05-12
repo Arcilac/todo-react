@@ -28,7 +28,6 @@ textarea {
   padding: 12px;
   height: 96px;
   width: calc(100% - 25px);
-  resize: none;
 }
 
 textarea::placeholder {
@@ -38,7 +37,7 @@ textarea::placeholder {
 }
 
 textarea:focus {
-  outline-color: #2db7dd;
+  outline-color: #61DAFA;
 }
 
 .TodoForm-buttonContainer {

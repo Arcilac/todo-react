@@ -9,16 +9,16 @@
   bottom: 24px;
   right: 24px;
   font-weight: bold;
-  color: #d3eff0;
+  color: #FAFAFA;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 64px;
   width: 64px;
-  z-index: 1;
 
   transform: rotate(0);
   transition: .3s ease;
+  z-index: 1;
 }
 
 .CreateTodoButton:hover {

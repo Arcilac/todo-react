@@ -20,7 +20,7 @@
 }
 
 .TodoSearch:focus {
-  outline-color: #3bbfe4;
+  outline-color: #61DAFA;
 }
 
 .TodoSearch:disabled {
