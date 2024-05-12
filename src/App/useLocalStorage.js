@@ -46,6 +46,7 @@ function useLocalStorage(itemName, initialValue) {
         onError(error)
       }
     }, 3000)
+    // eslint-disable-next-line
   }, [sincronizedItem])
 
   const saveItem = (newItem) => {

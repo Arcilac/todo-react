@@ -21,13 +21,12 @@ function App() {
     loading,
     searchedTodos,
     totalTodos,
-    completeTodo,
     completedTodos,
     openModal,
     searchValue,
   } = state
 
-  const { setOpenModal, addTodo, deleteTodo, setSearchValue, sincronizeTodos } = stateUpdaters
+  const { setOpenModal, addTodo, deleteTodo, setSearchValue, sincronizeTodos, completeTodo } = stateUpdaters
 
   return (
     <React.Fragment>
