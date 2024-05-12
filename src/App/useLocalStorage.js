@@ -1,5 +1,6 @@
 import React from "react"
 
+// eslint-disable-next-line
 function useLocalStorage(itemName, initialValue) {
   const [state, dispatch] = React.useReducer(reducer, initialState({ initialValue }))
   const { sincronizedItem, error, loading, item } = state
@@ -46,6 +47,7 @@ function useLocalStorage(itemName, initialValue) {
         onError(error)
       }
     }, 3000)
+    // eslint-disable-next-line
   }, [sincronizedItem])
 
   const saveItem = (newItem) => {

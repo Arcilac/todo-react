@@ -19,10 +19,6 @@
   
   .LoadingTodo-completeIcon,
   .LoadingTodo-deleteIcon {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 50px;
     height: 48px;
     width: 48px;
