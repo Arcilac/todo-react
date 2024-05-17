@@ -1,4 +1,5 @@
 import React from "react"
+import { useNavigate } from "react-router-dom"
 import { useTodos } from "../useTodos"
 import { TodoHeader } from "../../ui/TodoHeader"
 import { TodoCounter } from "../../ui/TodoCounter"
@@ -8,13 +9,13 @@ import { TodoItem } from "../../ui/TodoItem"
 import { TodosError } from "../../ui/TodosError"
 import { TodosLoading } from "../../ui/TodosLoading"
 import { EmptyTodos } from "../../ui/EmptyTodos"
-import { TodoForm } from "../../ui/TodoForm"
 import { CreateTodoButton } from "../../ui/CreateTodoButton"
-import { Modal } from "../../ui/Modal"
 import { ChangeAlert } from "../../ui/ChangeAlert"
 
 
+
 function HomePage() {
+  const navigate = useNavigate()
   const { state, stateUpdaters } = useTodos()
 
   const {
@@ -23,11 +24,15 @@ function HomePage() {
     searchedTodos,
     totalTodos,
     completedTodos,
-    openModal,
     searchValue,
   } = state
 
-  const { setOpenModal, addTodo, deleteTodo, setSearchValue, sincronizeTodos, completeTodo } = stateUpdaters
+   const { 
+    deleteTodo, 
+    setSearchValue, 
+    sincronizeTodos, 
+    completeTodo,
+} = stateUpdaters
 
   return (
     <React.Fragment>
@@ -52,20 +57,16 @@ function HomePage() {
             key={todo.id}
             text={todo.text}
             completed={todo.completed}
-            onEdit={() => console.log("Editando", todo.text)}
+            onEdit={() => navigate('/edit/')}
             onComplete={() => completeTodo(todo.id)}
             onDelete={() => deleteTodo(todo.id)}
           />
         )}
       </TodoList>
 
-      {!!openModal && (
-        <Modal>
-          <TodoForm addTodo={addTodo} setOpenModal={setOpenModal} />
-        </Modal>
-      )}
-
-      <CreateTodoButton setOpenModal={setOpenModal} />
+      <CreateTodoButton 
+        onClick={() => navigate("/new")}
+      />
 
       <ChangeAlert sincronize={sincronizeTodos} />
     </React.Fragment>
