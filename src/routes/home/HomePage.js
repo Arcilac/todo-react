@@ -47,14 +47,14 @@ function HomePage() {
         onEmptyTodos={() => <EmptyTodos />}
         onEmptySearchResults={(searchText) => <p>No results for {searchText}</p>}
       >
-        {(todo) => (
+        {todo => (
           <TodoItem
-            key={todo.text}
+            key={todo.id}
             text={todo.text}
             completed={todo.completed}
-            // onEdit={() => console.log("Editando", todo.text)}
-            onComplete={() => completeTodo(todo.text)}
-            onDelete={() => deleteTodo(todo.text)}
+            onEdit={() => console.log("Editando", todo.text)}
+            onComplete={() => completeTodo(todo.id)}
+            onDelete={() => deleteTodo(todo.id)}
           />
         )}
       </TodoList>
