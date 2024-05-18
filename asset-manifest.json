@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/todo-react/static/css/main.b17698c7.css",
-    "main.js": "/todo-react/static/js/main.2b53d1d4.js",
+    "main.css": "/todo-react/static/css/main.f70ec1d2.chunk.css",
+    "main.js": "/todo-react/static/js/main.73fb421e.chunk.js",
+    "main.js.map": "/todo-react/static/js/main.73fb421e.chunk.js.map",
+    "runtime~main.js": "/todo-react/static/js/runtime~main.6292bb99.js",
+    "runtime~main.js.map": "/todo-react/static/js/runtime~main.6292bb99.js.map",
+    "static/js/2.3f3a12b4.chunk.js": "/todo-react/static/js/2.3f3a12b4.chunk.js",
+    "static/js/2.3f3a12b4.chunk.js.map": "/todo-react/static/js/2.3f3a12b4.chunk.js.map",
     "index.html": "/todo-react/index.html",
-    "static/media/delete.svg": "/todo-react/static/media/delete.d9c7e0eeb3f573572e1521b7b69ed33e.svg",
-    "static/media/check.svg": "/todo-react/static/media/check.af03c9a6a0411e40578874e6f00e807b.svg",
-    "main.b17698c7.css.map": "/todo-react/static/css/main.b17698c7.css.map",
-    "main.2b53d1d4.js.map": "/todo-react/static/js/main.2b53d1d4.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.b17698c7.css",
-    "static/js/main.2b53d1d4.js"
-  ]
+    "precache-manifest.6fb1a1802dec140be6283955d8ea910b.js": "/todo-react/precache-manifest.6fb1a1802dec140be6283955d8ea910b.js",
+    "service-worker.js": "/todo-react/service-worker.js",
+    "static/css/main.f70ec1d2.chunk.css.map": "/todo-react/static/css/main.f70ec1d2.chunk.css.map",
+    "static/media/check.a6ff2ce6.svg": "/todo-react/static/media/check.a6ff2ce6.svg",
+    "static/media/delete.45d0d71a.svg": "/todo-react/static/media/delete.45d0d71a.svg",
+    "static/media/edit.0066693d.svg": "/todo-react/static/media/edit.0066693d.svg"
+  }
 }
