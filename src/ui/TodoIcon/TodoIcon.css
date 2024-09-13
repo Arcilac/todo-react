@@ -3,36 +3,47 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 48px;
-  width: 48px;
-  /* background-color: #CCC; */
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
+
 .Icon-container--check {
   position: absolute;
   left: 12px;
 }
+
 .Icon-container--edit {
   position: absolute;
-  top: -24px;
+  top: -20px;
   right: 48px;
 }
+
 .Icon-container--delete {
   position: absolute;
-  top: -24px;
+  top: -20px;
   right: 0;
 }
 
 .Icon-svg {
-  width: 24px;
-  height: 24px;
-  transition: fill .15s;
+  width: 20px;
+  height: 20px;
+  transition: fill 0.3s ease;
 }
+
+.Icon-container:hover {
+  background-color: #e6f3ff;
+}
+
 .Icon-container:hover .Icon-svg--check {
-  fill: #4caf50;
+  fill: #10b981;
 }
+
 .Icon-container:hover .Icon-svg--edit {
-  fill: #61DAFA;
+  fill: #3b82f6;
 }
+
 .Icon-container:hover .Icon-svg--delete {
-  fill: red;
+  fill: #ef4444;
 }

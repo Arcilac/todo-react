@@ -4,24 +4,38 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #1e1e1f50;
+  background: rgba(30, 58, 138, 0.5); /* Azul oscuro semi-transparente */
   z-index: 2;
+  backdrop-filter: blur(5px);
 }
 
 .ChangeAlert-container {
   position: fixed;
-  bottom: -10px;
-  left: -10px;
-  right: -10px;
-  padding: 34px;
-  background-color: #1e1e1f;
-  color: #f2f4f5;
-  z-index: 2;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  padding: 24px;
+  background-color: #ffffff; /* Fondo blanco */
+  color: #1f2937; /* Texto casi negro */
+  z-index: 3;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .ChangeAlert-container button {
   margin-top: 16px;
-  margin-bottom: 16px;
+  padding: 10px 20px;
+  background-color: #3b82f6; /* Azul medio */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ChangeAlert-container button:hover {
+  background-color: #2563eb; /* Azul más oscuro al pasar el mouse */
 }

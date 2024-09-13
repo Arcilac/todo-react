@@ -1,10 +1,12 @@
 .TodoCounter {
-  font-size: 24px;
+  font-size: 28px;
   text-align: center;
   margin: 0;
   padding: 48px;
+  color: #1e3a8a; /* Azul oscuro */
+  font-weight: 600;
 }
 
 .TodoCounter--loading {
-  opacity: 25%;
+  opacity: 0.7;
 }
